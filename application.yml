@@ -11,8 +11,6 @@ spring:
       server:
         git:
           uri: git@github.com:MarkerBrother/microspringcloud-config.git
-server:
-  port: 3340
 
   profiles:
     active: dev
@@ -25,8 +23,6 @@ spring:
       server:
         git:
           uri: git@github.com:MarkerBrother/microspringcloud-config.git
-server:
-  port: 3345
 
   profiles:
     active: test
