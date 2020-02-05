@@ -2,6 +2,8 @@ spring:
   profiles:
     active: dev
 ---
+server:
+ port: 6300
 spring:
   profiles: dev
   application:
