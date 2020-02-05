@@ -6,11 +6,6 @@ spring:
 spring:
   application:
     name: microspringcloud-config-3344
-  cloud:
-    config:
-      server:
-        git:
-          uri: git@github.com:MarkerBrother/microspringcloud-config.git
 
   profiles:
     active: dev
@@ -18,11 +13,6 @@ spring:
 spring:
   application:
     name: microspringcloud-config-3344
-  cloud:
-    config:
-      server:
-        git:
-          uri: git@github.com:MarkerBrother/microspringcloud-config.git
 
   profiles:
     active: test
