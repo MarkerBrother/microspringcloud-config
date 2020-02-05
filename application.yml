@@ -2,15 +2,31 @@ spring:
   profiles:
     active: dev
 ---
-server:
- port: 6300
-spring:
-  profiles: dev
-  application:
-    name: microspringboot-config-dev
 
+spring:
+  application:
+    name: microspringcloud-config-3344
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:MarkerBrother/microspringcloud-config.git
+server:
+  port: 3340
+
+  profiles:
+    active: dev
 ---
 spring:
-     profiles: test
-     application:
-       name: microspringboot-config-test
+  application:
+    name: microspringcloud-config-3344
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:MarkerBrother/microspringcloud-config.git
+server:
+  port: 3345
+
+  profiles:
+    active: test
